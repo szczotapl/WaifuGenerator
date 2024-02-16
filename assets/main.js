@@ -26,7 +26,7 @@ nsfwToggle.addEventListener('change', ()=>{
 	
 })
 
-const loading = './load.svg'
+const loading = './assets/load.svg'
 randomImage.src = loading
 
 randomWaifu.addEventListener("click",generateWaifu);
