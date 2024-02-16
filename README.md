@@ -29,10 +29,12 @@ Welcome to the Random Waifu Generator! This web application allows you to genera
 
 The Waifu Generator is your source for randomly generated waifu images and interactions. Have fun exploring the world of waifus and discovering your next waifu companion.
 
-### Contact Us
+### Contact
 
 Feel free to contact us with any questions or feedback. We appreciate your input and strive to make the Waifu Generator a better experience for you.
 
 - Discord: .riviox
+
+`Not ChatGPT Generated readme 100%`
 
 
