@@ -25,11 +25,11 @@
 
 ### About Waifu Generator
 
-The Waifu Generator is your source for randomly generated waifu images and interactions. Have fun exploring the world of waifus and discovering your next waifu companion.
+The Waifu Generator is your source for randomly generated waifu images. Have fun exploring the world of waifus and discovering your next waifu companion.
 
 ### Contact
 
-Feel free to contact us with any questions or feedback. We appreciate your input and strive to make the Waifu Generator a better experience for you.
+Feel free to contact us with any questions or feedback.
 
 - Discord: .riviox
 
