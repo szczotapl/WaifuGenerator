@@ -1,8 +1,6 @@
 # Random Waifu Generator
 
-Welcome to the Random Waifu Generator! This web application allows you to generate random waifu images and interactions. Whether you're looking for a cute waifu, a playful neko, or something a bit more adventurous, our generator has you covered. You can toggle the NSFW option if you're feeling daring!
-
-## Table of Contents
+![image](https://github.com/riviox/WaifuGenerator/assets/100956266/0cf02d86-b526-4c0f-b4b7-dd1a13724979)
 
 - [Features](#features)
 - [Usage](#usage)
