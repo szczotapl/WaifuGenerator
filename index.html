@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--
+    Hosting: Github
+    Developer: .riviox
+    Domain: is-a.dev
+    License: GNU GPL v3
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Waifu Generator</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="shortcut icon" href="./favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Waifu Generator</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="app">
+        <div class="image-wrapper">
+            <img class="random-image img-fluid" src="" alt="">
+        </div>
+
+        <div class="toggle">
+            <input type="checkbox" id="nsfwToggle">
+            <label for="nsfwToggle">  nsfw?</label>
+        </div>
+
+        <div class="sfw">
+            <button class="random-waifu btn btn-primary">Generate SFW</button>
+            <select class="form-select">
+                <option value="waifu">waifu</option>
+                <option value="neko">neko</option>
+                <option value="shinobu">shinobu</option>
+                <option value="megumin">megumin</option>
+                <option value="bully">bully</option>
+                <option value="cuddle">cuddle</option>
+                <option value="cry">cry</option>
+                <option value="hug">hug</option>
+                <option value="awoo">awoo</option>
+                <option value="kiss">kiss</option>
+                <option value="lick">lick</option>
+                <option value="pat">pat</option>
+                <option value="sumg">smug</option>
+                <option value="bonk">bonk</option>
+                <option value="yeet">yeet</option>
+                <option value="blush">blush</option>
+                <option value="smile">smile</option>
+                <option value="wave">wave</option>
+                <option value="highfive">highfive</option>
+                <option value="handhold">handhold</option>
+                <option value="nom">nom</option>
+                <option value="bite">bite</option>
+                <option value="glomp">glomp</option>
+                <option value="slap">slap</option>
+                <option value="kill">kill</option>
+                <option value="kick">kick</option>
+                <option value="happy">happy</option>
+                <option value="wink">wink</option>
+                <option value="poke">poke</option>
+                <option value="dance">dance</option>
+                <option value="cringe">cringe</option>
+              </select>
+        </div>
+        <div class="nsfw">
+            <button class="random-waifu-nsfw btn btn-danger">Generate NSFW</button>
+            <select class="form-select form-select-nsfw">
+                <option value="waifu">waifu</option>
+                <option value="neko">neko</option>
+                <option value="trap">trap</option>
+                <option value="blowjob">blowjob</option>
+              </select>
+        </div>
+    </div>
+    <div class="other">
+        <div class="section visible" id="about">
+            <h2>About Waifu Generator</h2>
+            <p>Welcome to the Waifu Generator, your source for randomly generated waifu images and interactions.
+                Whether you're looking for a cute waifu, a playful neko, or something a bit more adventurous, our
+                generator has you covered. Toggle the NSFW option if you're feeling daring!</p>
+            <p>Explore the different categories, click the generate button, and discover your next waifu companion.
+                Have fun and enjoy the world of waifus!</p>
+        </div>
+
+        <div class="section visible" id="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to contact us with any questions or feedback.</p>
+            <p>Discord: .riviox</p>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ojszNvYUDE5YeqtfkFU6ZLUny9Eau6Z6OYdFGEdvntQZhVZZifhxFexm+1wlf1rJ" crossorigin="anonymous"></script>
+</body>
+</html>
