@@ -33,7 +33,6 @@ The Waifu Generator is your source for randomly generated waifu images and inter
 
 Feel free to contact us with any questions or feedback. We appreciate your input and strive to make the Waifu Generator a better experience for you.
 
-- Email: waifu.generator@example.com
-- Phone: +123 456 7890
+- Discord: .riviox
 
 
