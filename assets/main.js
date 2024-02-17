@@ -62,5 +62,13 @@ async function fetchWaifuNsfw() {
 	})
 }
 
+async function copyImg() {
+	var imgElement = document.getElementsByClassName("random-image");
+    imgElement.addEventListener("click", function() {
+        var imgUrl = imgElement.src;
+        window.open(imgUrl, "_blank");
+    });
+}
+
 
 generateWaifu()
