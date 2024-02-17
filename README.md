@@ -1,6 +1,7 @@
 # Random Waifu Generator
 
-![image](https://github.com/riviox/WaifuGenerator/assets/100956266/0cf02d86-b526-4c0f-b4b7-dd1a13724979)
+![image](https://github.com/riviox/WaifuGenerator/assets/100956266/05eb9d2b-b8ea-4297-b987-3379629cbb41)
+
 
 - [Features](#features)
 - [Usage](#usage)
