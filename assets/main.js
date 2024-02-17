@@ -39,8 +39,6 @@ function generateWaifu() {
 	} else if (document.querySelector(".nsfw").style.display == "flex") {
 		fetchWaifuNsfw()
 	}
-
-
 }
 
 async function fetchWaifu() {
