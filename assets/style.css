@@ -8,7 +8,7 @@
 }
 
 html {
-    overflow-y: scroll;
+    overflow-y: hidden;
 }
 ::-webkit-scrollbar {
     width: 0px;
@@ -34,6 +34,7 @@ body {
     align-items: center;
     position: relative;
     z-index: 2;
+    height: 100%;
 }
 
 .logo {
@@ -71,6 +72,13 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transform: translateY(20px);
     transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .section h2 {
