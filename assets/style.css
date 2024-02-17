@@ -7,6 +7,14 @@
     --accent-color: #6b287c;
 }
 
+html {
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
 body {
     background: linear-gradient(180deg, var(--background-gradient-start), var(--background-gradient-end));
     position: relative;
@@ -20,6 +28,7 @@ body {
 
 .app {
     margin: 10px;
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,8 +48,7 @@ body {
     overflow: hidden;
     height: 80vh;
     border-radius: 15px;
-    border-color: #6b287c;
-    border-style: solid;
+    border: 2px solid var(--accent-color);
     z-index: 2;
 }
 
@@ -49,6 +57,7 @@ body {
     flex-direction: column;
     align-items: center;
     background: var(--background-gradient-end);
+    padding: 20px;
 }
 
 .section {
@@ -56,7 +65,7 @@ body {
     text-align: center;
     padding: 20px;
     margin: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -65,7 +74,7 @@ body {
 }
 
 .section h2 {
-    color: #333;
+    color: var(--text-color);
 }
 
 .section p {
@@ -94,6 +103,7 @@ body {
     padding: 10px 20px;
     border-radius: 8px;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -123,17 +133,17 @@ body {
     cursor: pointer;
     outline: none;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
 
-    &::after {
-        content: '\25BC';
-        font-size: 14px;
-        position: absolute;
-        top: 50%;
-        right: 15px;
-        transform: translateY(-50%);
-        pointer-events: none;
-        color: var(--text-color);
-    }
+.form-select::after {
+    content: '\25BC';
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: var(--text-color);
 }
 
 .form-select:hover {

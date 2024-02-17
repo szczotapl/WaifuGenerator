@@ -20,7 +20,7 @@
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="./assets/favicon.png" alt="" class="logo">  Waifu Generator</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,10 +32,10 @@
                         <a class="nav-link" href="https://github.com/riviox/WaifuGenerator">Source Code</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#aboutModal">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
                     </li>
                     <div class="share">
                         <a class="btn btn-primary" id="share">Share Image</a>
@@ -44,7 +44,7 @@
             </div>
         </div>
     </nav>
-    <div class="modal" id="copied">
+    <div class="modal fade" id="copied">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -114,20 +114,42 @@
         </div>
     </div>
     <div class="other">
-        <div class="section visible" id="about">
-            <h2>About Waifu Generator</h2>
-            <p>Welcome to the Waifu Generator, your source for randomly generated waifu images.
-                Whether you're looking for a cute waifu, a playful neko, or something a bit more adventurous, our
-                generator has you covered. Toggle the NSFW option if you're feeling horni!</p>
-            <p>Explore the different categories, click the generate button, and discover your next waifu companion.
-                Have fun and enjoy the world of waifus!</p>
-            <p>WaifuGenerator uses <a href="https://waifu.pics">waifu.pics</a>to display images</p>
+        <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="aboutModalLabel">About Waifu Generator</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>Welcome to the Waifu Generator, your source for randomly generated waifu images.
+                            Whether you're looking for a cute waifu, a playful neko, or something a bit more adventurous, our
+                            generator has you covered. Toggle the NSFW option if you're feeling horni!</p>
+                        <p>Explore the different categories, click the generate button, and discover your next waifu companion.
+                            Have fun and enjoy the world of waifus!</p>
+                        <p>WaifuGenerator uses <a href="https://waifu.pics" target="_blank">waifu.pics</a> to display images.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="section visible" id="contact">
-            <h2>Contact Me</h2>
-            <p>Feel free to contact me with any questions or feedback.</p>
-            <p>Discord: .riviox</p>
+        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="contactModalLabel">Contact Me</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>Feel free to contact me with any questions or feedback.</p>
+                        <p>Discord: .riviox</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script>
