@@ -7,33 +7,23 @@
     --accent-color: #6b287c;
 }
 
-html {
-    overflow-y: hidden;
-}
-::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 16px;
 }
 
 body {
     background: linear-gradient(180deg, var(--background-gradient-start), var(--background-gradient-end));
-    position: relative;
-    height: 100vh;
     color: var(--text-color);
-}
-
-.modal {
-    color: #666;
+    overflow: hidden;
 }
 
 .app {
-    margin: 10px;
-    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    z-index: 2;
     height: 100%;
 }
 
@@ -51,6 +41,7 @@ body {
     border-radius: 15px;
     border: 2px solid var(--accent-color);
     z-index: 2;
+    margin-top: 5rem;
 }
 
 .other {
@@ -173,8 +164,18 @@ body {
     color: #fff;
 }
 
-@media (max-width: 360px) {
-    .image-wrapper {
-        height: 70vh;
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
     }
+
+    .app {
+        margin: 5px;
+        margin-top: 3rem;
+    }
+
+    .image-wrapper {
+        height: 50vh;
+    }
+
 }

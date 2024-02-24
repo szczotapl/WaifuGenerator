@@ -1,0 +1,22 @@
+{
+  "name": "waifugenerator",
+  "version": "1.0.0",
+  "description": "Waifu Generator by riviox",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riviox/WaifuGenerator.git"
+  },
+  "keywords": [
+    "waifu"
+  ],
+  "author": "riviox",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/riviox/WaifuGenerator/issues"
+  },
+  "homepage": "https://github.com/riviox/WaifuGenerator#readme"
+}
