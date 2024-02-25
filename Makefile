@@ -12,8 +12,8 @@ install:
 	sudo update-desktop-database
 
 uninstall:
-	rm -rf $(INSTALL_DIR)
-	rm -f /usr/share/applications/$(APP_NAME).desktop
+	sudo rm -rf $(INSTALL_DIR)
+	sudo rm -f /usr/share/applications/$(APP_NAME).desktop
 	sudo update-desktop-database
 
 .PHONY: install uninstall
