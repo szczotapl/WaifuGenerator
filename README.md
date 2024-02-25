@@ -8,6 +8,14 @@
 - [About](#about)
 - [Contact](#contact)
 
+# Install via [GitMan](https://github.com/riviox/GitMan):
+```
+gitman -S waifugenerator
+```
+- Dependencies:
+    - npm
+##
+
 ## Features
 
 - Generate random SFW and NSFW waifu images.

@@ -4,7 +4,8 @@
   "description": "Waifu Generator by riviox",
   "main": "index.js",
   "scripts": {
-    "start": "electron index.js"
+    "start": "electron index.js",
+    "build": "electron-packager . waifugenerator --platform=linux,win32 --arch=x64,ia32 --out=dist --electron-version=29.0.1"
   },
   "repository": {
     "type": "git",
