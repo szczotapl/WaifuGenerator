@@ -8,6 +8,7 @@ install:
 	electron-packager $(SRC_DIR) $(APP_NAME) --platform=linux --arch=x64 --out=dist --electron-version=13.1.7
 	sudo cp -r $(SRC_DIR)/waifugenerator.desktop /usr/share/applications
 	sudo cp -r dist/$(APP_NAME)-linux-x64/* $(INSTALL_DIR)
+	sudo cp -r $(SRC_DIR)/icon.png $(INSTALL_DIR)
 	sudo chmod +x $(INSTALL_DIR)/$(APP_NAME)
 	sudo update-desktop-database
 
