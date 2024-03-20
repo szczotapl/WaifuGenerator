@@ -1,10 +1,9 @@
 APP_NAME := waifugenerator
 SRC_DIR := app
-INSTALL_DIR := ~/.config/waifugenerator
+INSTALL_DIR := ~/.local/bin/$(APP_NAME)
 
 install:
 	mkdir -p $(INSTALL_DIR)
-	sudo npm i -g electron-packager
 	electron-packager $(SRC_DIR) $(APP_NAME) --platform=linux --arch=x64 --out=dist --electron-version=13.1.7
 	sudo cp -r $(SRC_DIR)/waifugenerator.desktop /usr/share/applications
 	sudo cp -r dist/$(APP_NAME)-linux-x64/* $(INSTALL_DIR)
